@@ -4,6 +4,16 @@ Jenkins container based on the official jenkins image.  Build on Ubuntu.
 
 (see official jenkins docker project https://github.com/jenkinsci/docker)
 
+I've layered on a few useful tools like:
+* git v2
+* wget / curl
+* vim
+See the Dockerfile for details.
+
+As such, this image is somewhat larger than the official image...
+
+Jenkins version is 2.28.
+
 # LICENSE
 MIT
 
@@ -21,4 +31,4 @@ also use:
 RUN echo 2.0 > /usr/share/jenkins/ref/jenkins.install.UpgradeWizard.state
 ```
 
-(see oficial link above for details)
+(see official link above for details)
