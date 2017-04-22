@@ -12,8 +12,6 @@ See the Dockerfile for details.
 
 As such, this image is somewhat larger than the official image...
 
-Jenkins version is 2.34.
-
 # LICENSE
 MIT
 
