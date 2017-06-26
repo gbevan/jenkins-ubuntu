@@ -14,7 +14,7 @@ RUN \
     apt-get -yq update && \
     apt-get dist-upgrade -yq && \
     apt-get install -yqq sudo wget aptitude htop vim vim-puppet git traceroute dnsutils \
-      curl ssh sudo psmisc gcc make build-essential libfreetype6 libfontconfig openjdk-8-jre-headless \
+      curl ssh sudo psmisc gcc make build-essential libfreetype6 libfontconfig openjdk-8-jdk-headless \
       augeas-tools tree tcpdump && \
     echo "jenkins ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/jenkins && \
     chmod 0440 /etc/sudoers.d/jenkins && \
