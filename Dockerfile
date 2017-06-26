@@ -39,9 +39,9 @@ ARG gid=1001
 RUN groupadd -g ${gid} ${group} \
     && useradd -d "$JENKINS_HOME" -u ${uid} -g ${gid} -m -s /bin/bash ${user}
 
-# Jenkins home directory is a volume, so configuration and build history
+# Jenkins home directory needs to be a persistent volume, so configuration and build history
 # can be persisted and survive image upgrades
-VOLUME /var/jenkins_home
+#VOLUME /var/jenkins_home
 
 # `/usr/share/jenkins/ref/` contains all reference configuration we want
 # to set on a fresh new installation. Use it to bundle additional plugins

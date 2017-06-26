@@ -12,6 +12,8 @@ See the Dockerfile for details.
 
 As such, this image is somewhat larger than the official image...
 
+Be sure to map a persistent volume to /var/jenkins_home.
+
 # LICENSE
 MIT
 
