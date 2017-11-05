@@ -1,8 +1,11 @@
 # jenkins-ubuntu
 
-Jenkins container based on the official jenkins image.  Build on Ubuntu.
+Jenkins container based on the official jenkins image.  Built on Ubuntu.
 
 (see official jenkins docker project https://github.com/jenkinsci/docker)
+
+latest will now always track the latest LTS version from jenkins
+(triggered from their jenkins/jenkins).
 
 I've layered on a few useful tools like:
 * git v2
